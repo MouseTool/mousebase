@@ -1,6 +1,6 @@
 {
   "name": "@mousetool/mousebase",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A bare minimum set of tools to get your Transformice script started hazzle-free.",
   "main": "dummy.js",
   "scripts": {
