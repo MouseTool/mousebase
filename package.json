@@ -1,0 +1,21 @@
+{
+  "name": "@mousetool/mousebase",
+  "version": "1.0.0",
+  "description": "A bare minimum set of tools to get your Transformice script started hazzle-free.",
+  "main": "dummy.js",
+  "scripts": {
+    "build": "onelua index.lua out.lua",
+    "setup": "node setup.js"
+  },
+  "onelua": {
+    "main": "init.lua"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@mousetool/nickname801": "^1.0.0"
+  },
+  "devDependencies": {
+    "@mousetool/tfm-vscode": "^1.0.1"
+  }
+}
