@@ -16,7 +16,7 @@ Player._init = function(self, name)
     Player._parent._init(self)
 
     self.name = name
-    self.nameId = nickname801_idName(name)
+    self.nameSid = nickname801_idName(name)
     self.isSouris = nickname801_isSouris(name)
 end
 
