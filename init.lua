@@ -1,5 +1,5 @@
 return {
-    Class = require("Class"),
+    Class = require("@mousetool/class"),
     EventEmitter = require("EventEmitter"),
     MbApi = require("MbApi"),
     MbPlayer = require("MbPlayer"),

@@ -2,7 +2,7 @@
 --- @class EventEmitter:Class
 --- @field protected _crucialListeners table
 --- @field protected _listeners table
-local EventEmitter = require("Class"):extend("EventEmitter")
+local EventEmitter = require("@mousetool/class"):extend("EventEmitter")
 
 local onFunc = function(events, eventName, listener, options)
     if not events[eventName] then
