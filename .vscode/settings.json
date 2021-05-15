@@ -15,6 +15,5 @@
         "node_modules/?/init.lua",
         "node_modules/?/?.lua"
     ],
-    "Lua.workspace.useGitIgnore": false,
-    "Lua.telemetry.enable": false
+    "Lua.workspace.useGitIgnore": false
 }
