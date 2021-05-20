@@ -1,3 +1,5 @@
+local patched_xpcall = require("overloads").xpcall
+
 --- Event emitter.
 --- @class EventEmitter:Class
 --- @field protected _crucialListeners table
@@ -22,8 +24,8 @@ local emitFunc = function(listeners, eventName, ...)
 
     for i = 1, listeners._sz do
         local listener, options = listeners[i][1], listeners[i][2]
-        xpcall(listener, function(err)
-            print("Runtime Error : event" .. eventName .. ": ".. tostring(err) .. "\n" .. debug.traceback(nil, 2))
+        patched_xpcall(listener, function(err)
+            print("Runtime Error : Event " .. eventName .. ": ".. tostring(err) .. "\n" .. debug.traceback(nil, 2))
         end, ...)
         if options and options.once then
             listeners[i] = nil
