@@ -4,8 +4,6 @@
 
 local MbPlayer = require("MbPlayer")
 
-local cached_api
-
 --- @return MbApi
 local createApi = function()
     -- Private vars
@@ -56,6 +54,9 @@ local createApi = function()
 
     return Api:new()
 end
+
+--- @type MbApi
+local cached_api
 
 if cached_api then
     error("Tried to create more than one Api instance! This should only be created in the main program file, and optionally cached for future use.")

@@ -13,6 +13,6 @@
     "@mousetool/nickname801": "^1.0.0"
   },
   "devDependencies": {
-    "@mousetool/tfm-vscode": "^1.0.1"
+    "@mousetool/tfm-vscode": "^2.0.0"
   }
 }

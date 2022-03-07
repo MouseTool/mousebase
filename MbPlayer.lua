@@ -21,7 +21,7 @@ Player._init = function(self, name)
 end
 
 --- Retrieves the indexed playerList of the player.
---- @return TfmPlayer
+--- @return tfm.Player
 Player.getTfmPlayer = function(self)
     return roomGet.playerList[self.name]
 end
