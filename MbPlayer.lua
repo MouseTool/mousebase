@@ -1,5 +1,5 @@
 --- MouseBase player class.
---- @class MbPlayer:EventEmitter
+--- @class mousebase.MbPlayer:mousebase.EventEmitter
 --- @field public name string @The player's A801 name
 --- @field public nameSid string @The player's stringified consistent name identifier
 --- @field public isSouris boolean @Whether the player is a souris (guest)

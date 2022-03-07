@@ -1,16 +1,16 @@
 --- Main API initializer for Transformice.
---- @class MbApi:EventEmitter
---- @field tfmEvent MbTfmEvent
+--- @class mousebase.MbApi:mousebase.EventEmitter
+--- @field tfmEvent mousebase.MbTfmEvent
 
 local MbPlayer = require("MbPlayer")
 
---- @return MbApi
+--- @return mousebase.MbApi
 local createApi = function()
     -- Private vars
     local TfmEvent = require("MbTfmEvent")
     local players = {}
 
-    --- @type MbApi
+    --- @type mousebase.MbApi
     local Api = require("EventEmitter"):extend("MbApi")
 
     Api._init = function(self)
@@ -55,7 +55,7 @@ local createApi = function()
     return Api:new()
 end
 
---- @type MbApi
+--- @type mousebase.MbApi
 local cached_api
 
 if cached_api then

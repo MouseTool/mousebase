@@ -1,7 +1,7 @@
 local patched_xpcall = require("overloads").xpcall
 
 --- Event emitter.
---- @class EventEmitter:Class
+--- @class mousebase.EventEmitter:Class
 --- @field protected _crucialListeners table
 --- @field protected _listeners table
 local EventEmitter = require("@mousetool/class"):extend("EventEmitter")
@@ -55,7 +55,7 @@ local emitFunc = function(listeners, eventName, ...)
 end
 
 --- Creates a new event emitter.
---- @return EventEmitter @The instance of the EventEmitter
+--- @return mousebase.EventEmitter @The instance of the EventEmitter
 EventEmitter._init = function(self)
     self._listeners = { _sz = 0 }
     self._crucialListeners = { _sz = 0 }
@@ -66,7 +66,7 @@ end
 --- @param eventName string The name of the event
 --- @param listener function The callback function
 --- @param options table
---- @return EventEmitter
+--- @return mousebase.EventEmitter
 EventEmitter.on = function(self, eventName, listener, options)
     onFunc(self._listeners, eventName, listener, options)
     return self

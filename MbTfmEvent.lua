@@ -49,7 +49,7 @@
 --- The eventName used in the methods on() and emit() are equivalent to the
 --- original name of events used in TFM API, except
 ---   a. without the "event" keyword in front.
---- @class MbTfmEvent:EventEmitter
+--- @class mousebase.MbTfmEvent:mousebase.EventEmitter
 local MbTfmEvent = require("EventEmitter"):extend("MbTfmEvent")
 
 local hookedEvs = {}
