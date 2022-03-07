@@ -6,6 +6,9 @@ on:
     tags: [ "*" ]
   workflow_dispatch:
 
+env:
+  NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,5 +25,3 @@ jobs:
           scope: "@mousetool"
       - run: npm ci
       - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
