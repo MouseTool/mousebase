@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "@mousetool/class": "^1.0.1",
+    "@mousetool/linkedlist": "^1.0.5",
     "@mousetool/nickname801": "^1.0.0"
   },
   "devDependencies": {
